@@ -119,15 +119,18 @@ public class TechJobs {
 
     // Print a list of jobs
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
+
+    // checks if there are results and prints message if not; when there are results, prints results to console
+
         if (someJobs.size() == 0) {
             System.out.println("No Results");
         } else {
             for (HashMap<String, String> job : someJobs) {
-                System.out.println("*****");
+                System.out.println("\n*****");
                 for (Map.Entry<String, String> fields : job.entrySet()) {
                     System.out.println(fields.getKey() + ": " + fields.getValue());
                 }
-                System.out.println("*****\n");
+                System.out.println("*****");
             }
         }
     }
