@@ -123,7 +123,7 @@ public class TechJobs {
     // checks if there are results and prints message if not; when there are results, prints results to console
 
         if (someJobs.size() == 0) {
-            System.out.println("No Results");
+            System.out.print("No Results");
         } else {
             for (HashMap<String, String> job : someJobs) {
                 System.out.println("\n*****");
